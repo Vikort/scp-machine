@@ -156,7 +156,7 @@ sc_result SCPOperatorContAdd::Execute()
     elem1 = operands[0]->CreateNodeOrLink();
     arc1 = ms_context->CreateArc(sc_type_arc_common, elem1, elem3);
     ms_context->CreateArc(sc_type_arc_pos_const_perm, elem5, arc1);
-    operands[0]->SetValue(elem1);
+    operands[0]->SetValue(elem3);
 
     std::cout << "SCPOperatorContAdd execute(): end \n";
     FinishExecutionSuccessfully();
